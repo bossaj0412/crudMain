@@ -6,7 +6,7 @@ import "./App.css";
 import Form from "./components/Form";
 import UsersList from "./components/UsersList";
 
-const BASE_URL = "https://crud-production-384a.up.railway.app";
+const BASE_URL = "http://localhost:8000";
 
 function App() {
   const [userData, setUserData] = useState(null);
@@ -30,7 +30,6 @@ function App() {
         fetchUsersData={fetchUsersData}
         BASE_URL={BASE_URL}
       />
-
       <Toaster />
     </div>
   );
